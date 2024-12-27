@@ -28,13 +28,10 @@ twitter_username: noname
 github_username:  Guo-Hai-feng
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-archives
-  - minimal-mistakes-jekyll
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+  
 
 
     
