@@ -28,9 +28,9 @@ twitter_username: noname
 github_username:  Guo-Hai-feng
 
 # Build settings
-remote_theme: pages-themes/hacker@v0.2.0
+theme: minima
 plugins:
-- jekyll-remote-theme 
+  - jekyll-feed
   
 gem "github-pages", group: :jekyll_plugins
 
