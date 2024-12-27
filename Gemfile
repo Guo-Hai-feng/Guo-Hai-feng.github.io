@@ -7,29 +7,35 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.3.4"
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.5"
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
-# If you have any plugins, put them here!
+# 注释掉 Jekyll 的版本指定，因为 `github-pages` 会处理它
+# gem "jekyll", "~> 4.3.4" 
+
+# 使用 GitHub Pages 提供的版本来替代 Jekyll
+#gem "github-pages", group: :jekyll_plugins
+
+# 你可以继续使用 Minima 主题，确保其与 GitHub Pages 兼容
+gem "minima", "~> 2.1.1"
+
+# 如果你有额外的插件，可以继续在这里列出
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-remote-theme"
+  gem "jekyll-seo-tag"
+  gem "kramdown-parser-gfm"
+
+
 end
 
-# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
-# and associated library.
+# Windows 平台的额外依赖（如果适用）
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
 end
 
-# Performance-booster for watching directories on Windows
+# 在 Windows 平台上的性能提升
 gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
-# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
-# do not have a Java counterpart.
+# 对于 JRuby 构建的 http_parser.rb 依赖
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-gem "github-pages", group: :jekyll_plugins
+
