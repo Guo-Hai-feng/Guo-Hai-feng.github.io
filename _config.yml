@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 楚子航的个人博客
+title: 楚子航个人博客
 email: haifengg07@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   这个博客作为个人学习资料管理使用，此外，献给最喜欢的楚子航先生
@@ -31,6 +31,15 @@ github_username:  Guo-Hai-feng
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+
+  plugins:
+    - jekyll-seo-tag
+    - jekyll-feed
+    - jekyll-sitemap
+    - jekyll-archives
+    - minimal-mistakes-jekyll
+
+gem "github-pages", group: :jekyll_plugins
 
 # Exclude from processing.
 # The following items will not be processed, by default.
