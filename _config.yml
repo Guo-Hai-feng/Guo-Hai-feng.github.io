@@ -29,6 +29,7 @@ github_username:  Guo-Hai-feng
 
 # Build settings
 theme: minima
+
 plugins:
   - jekyll-feed
   
@@ -42,7 +43,10 @@ gem "github-pages", group: :jekyll_plugins
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+include:
+    - .asset/
+
+#exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

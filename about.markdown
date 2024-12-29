@@ -1,18 +1,41 @@
 ---
-layout: page
+layout: about
 title: About
-permalink: /about/
+
+custom_css: "/asset/css/about.css"
+
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
 
 
-[jekyll-organization]: https://github.com/jekyll
+# 关于 Jekyll
+
+**Jekyll** 是一个静态网站生成器，它可以将 Markdown、HTML、Liquid 模板等源文件转换成静态网页。Jekyll 是由 **Ruby** 编写的，它非常适合用来构建博客、个人网站或文档网站。
+
+## 特点
+
+- **静态网站生成器**：Jekyll 允许你将纯文本的 Markdown 文件转化为完整的静态网站，无需复杂的数据库或服务器配置。
+- **Markdown 支持**：你可以用 Markdown 写作，Jekyll 会自动将它们渲染成 HTML 页面。
+- **模板系统**：Jekyll 使用 Liquid 作为模板语言，使你能够在页面中插入动态内容，如列表、导航条等。
+- **插件系统**：Jekyll 支持插件，可以扩展其功能，处理更复杂的任务，如 SEO 优化、自动化生成内容等。
+- **自动化部署**：Jekyll 可以与 GitHub Pages 无缝集成，方便部署和发布网站。
+
+## 工作原理
+
+Jekyll 的工作流程通常如下：
+
+1. **编写源文件**：你可以编写 `.md` 格式的文章，使用 YAML 格式的 Front Matter 定义页面的元数据（如标题、日期等）。
+2. **转换生成静态文件**：Jekyll 会读取你的源文件，使用模板引擎生成最终的 HTML 文件。
+3. **部署和发布**：生成的静态文件可以托管在任何静态文件托管服务上，如 GitHub Pages、Netlify 等。
+
+## 优势
+
+- **简单易用**：Jekyll 适合不需要动态内容的项目，如个人博客、作品集、文档等。
+- **支持 GitHub Pages**：Jekyll 是 GitHub 官方推荐的静态网站生成器，GitHub Pages 可以直接托管 Jekyll 生成的静态网站。
+- **轻量级**：由于是静态网站，Jekyll 的网站加载速度非常快，且不依赖于服务器端数据库或其他资源。
+- **完全开源**：Jekyll 是开源项目，免费使用，并且有大量社区支持。
+
+## 结语
+
+Jekyll 是一个非常适合博客和小型网站的静态网站生成器，特别适合开发者和技术人员。其简单的使用方法和强大的自定义功能，使其成为了众多个人博客和项目网站的首选工具。如果你正在寻找一种快速、轻便的方式来构建静态网站，Jekyll 绝对是一个值得考虑的选项。
+

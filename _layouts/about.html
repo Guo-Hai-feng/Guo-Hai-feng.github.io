@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+  <title>关于 Jekyll</title>
+  <meta name="generator" content="Jekyll v4.3.4" />
+  <meta property="og:title" content="楚子航个人博客" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="介绍 Jekyll 技术" />
+  <meta property="og:description" content="介绍 Jekyll 技术" />
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/" />
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/" />
+  <meta property="og:site_name" content="楚子航个人博客" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="楚子航个人博客" />
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","description":"介绍 Jekyll 技术","headline":"关于 Jekyll","name":"楚子航个人博客","url":"{{ site.url }}{{ site.baseurl }}/"}
+  </script>
+  <!-- End Jekyll SEO tag -->
+  
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}{{ page.custom_css }}">
+  <style>
+    .background {
+      background-image: url('{{ site.baseurl }}/asset/images/aa.jpg');
+      filter: blur(0.25px); /* 添加模糊效果 */
+    }
+  </style>
+  
+</head>
+<body class="background">
+    <!-- 加载动画 -->
+    <div id="loader" class="loader"></div>
+  
+    <!-- Main content -->
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">关于 Jekyll</h1>
+          </header>
+          <div class="post-content">
+            <p>欢迎来到 <strong>[楚子航的个人博客]</strong>，在这里我将为你介绍 Jekyll，一个轻量级的静态网站生成器。</p>
+  
+            <h2 id="什么是Jekyll">什么是 Jekyll？</h2>
+            <p>Jekyll 是一个开源的静态网站生成器，广泛用于创建个人博客和项目站点。它将 Markdown 文件转换为静态的 HTML 文件，不需要数据库支持，因此加载速度快，维护简单。</p>
+  
+            <h2 id="Jekyll的特点">Jekyll 的特点</h2>
+            <ul>
+              <li><strong>简单易用：</strong>通过配置文件和模板，快速生成静态网站。</li>
+              <li><strong>支持 Markdown：</strong>可以使用 Markdown 来编写内容，Jekyll 会自动转换为 HTML。</li>
+              <li><strong>高度自定义：</strong>支持自定义布局、模板和插件，灵活性极高。</li>
+              <li><strong>广泛社区支持：</strong>有大量的文档、插件和主题可供选择。</li>
+            </ul>
+  
+            <h2 id="为什么选择Jekyll">为什么选择 Jekyll？</h2>
+            <p>作为一个开发者，Jekyll 非常适合搭建个人博客和技术文档站点，它能够为开发者提供高效且无数据库的方案。通过 GitHub Pages 轻松托管，还可以将网站内容与代码管理集成。</p>
+  
+            <h2 id="Jekyll的使用">Jekyll 的使用</h2>
+            <ol>
+              <li>安装 Jekyll 和依赖：</li>
+              <ul>
+                <li>通过 RubyGems 安装 Jekyll：</li>
+                <pre><code>gem install jekyll</code></pre>
+              </ul>
+              <li>创建一个新项目：</li>
+              <ul>
+                <li>使用命令行生成 Jekyll 项目：</li>
+                <pre><code>jekyll new my-site</code></pre>
+              </ul>
+              <li>启动本地服务器：</li>
+              <ul>
+                <li>在项目目录中运行：</li>
+                <pre><code>bundle exec jekyll serve</code></pre>
+              </ul>
+            </ol>
+  
+            <h2 id="如何使用Jekyll搭建博客">如何使用 Jekyll 搭建博客</h2>
+            <ul>
+              <li><strong>创建页面：</strong>在 `_posts` 目录下添加 Markdown 文件，Jekyll 会自动识别和渲染。</li>
+              <li><strong>设置主题：</strong>可以选择预设的主题或自己定制 HTML 和 CSS 样式。</li>
+              <li><strong>添加插件：</strong>通过插件增加更多功能，如 RSS 输出、评论系统等。</li>
+            </ul>
+  
+            <footer class="site-footer h-card">
+                <data class="u-url" href="/chuzihang/"></data>
+              
+                <div class="wrapper">
+                  <div class="footer-col-wrapper">
+                    <div class="footer-col footer-col-1">
+                      <!-- 添加“请联系我”字样 -->
+                      <p>请联系我：</p>
+                      <ul class="contact-list">
+                        <li><a class="u-email" href="mailto:haifengg07@gmail.com">haifengg07@gmail.com</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="footer-col footer-col-2">
+                      <ul class="social-media-list">
+                        <li><a href="https://github.com/Guo-Hai-feng">
+                          <svg class="svg-icon">
+                            <use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#github"></use>
+
+                          </svg> 
+                          <span class="username">Guo-Hai-feng</span></a>
+                        </li>
+                        <li><a href="https://www.twitter.com/noname">
+                          <svg class="svg-icon">
+                            <use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#twitter"></use>
+                          </svg> 
+                          <span class="username">noname</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+    </main>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top">↑</button>
+  
+    <script src="{{ site.baseurl }}{{ page.custom_js }}"></script>
+</body>
+</html>

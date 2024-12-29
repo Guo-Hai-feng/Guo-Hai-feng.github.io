@@ -1,0 +1,126 @@
+/* 时间轴容器样式 */
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* 为时间轴整体添加淡入动画 */
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ddd;
+    transform: translateX(-50%);
+  }
+  
+  /* 时间轴条目样式 */
+  .timeline-item {
+    position: relative;
+    padding: 20px 0;
+    width: 50%;
+    margin: 10px 0;
+    opacity: 0; /* 默认不可见 */
+    animation: slideIn 1s ease-in-out forwards; /* 为每个条目添加滑入动画 */
+  }
+  
+  .timeline-item:nth-child(odd) {
+    left: 0;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 50%;
+  }
+  
+  /* 时间轴条目动画：从左或右侧滑入 */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(100%); /* 从右侧滑入 */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* 为奇数和偶数条目设置不同的动画效果 */
+  .timeline-item:nth-child(odd) {
+    animation: slideInLeft 1s ease-in-out forwards;
+  }
+  
+  .timeline-item:nth-child(even) {
+    animation: slideInRight 1s ease-in-out forwards;
+  }
+  
+  /* 从左侧滑入 */
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%); /* 从左侧滑入 */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* 从右侧滑入 */
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%); /* 从右侧滑入 */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* 圆形节点 */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #3498db;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+  
+  /* 时间轴中的文本 */
+  .post-meta {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .post-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .post-link:hover {
+    color: #3498db;
+  }
+  
+  /* 淡入动画 */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,81 @@
+/* body背景图案和渐变动画 */
+body {
+    animation: gradientBG 10s ease forwards, blurEffect 10s ease forwards;
+    background-image: url('your-image-url.jpg'); /* 替换为你的背景图像 */
+    background-size: cover; /* 使背景图案覆盖整个视口 */
+    background-position: center; /* 将背景图像居中 */
+    background-repeat: no-repeat; /* 防止背景图像重复 */
+    filter: blur(5px); /* 初始背景稍微模糊 */
+  }
+  
+  /* 背景渐变动画（从左到右移动，然后返回原位） */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; } /* 动画结束后回到初始位置 */
+  }
+  
+  /* 背景模糊效果的动画（只在前半段模糊，后面保持清晰） */
+  @keyframes blurEffect {
+    0% { filter: blur(5px); } /* 初始模糊程度较小 */
+    50% { filter: blur(0); } /* 清晰状态 */
+    100% { filter: blur(0); } /* 保持清晰 */
+  }
+  
+  /* 文本直接显示，无需淡入效果 */
+  .post-content h1, .post-content p {
+    opacity: 1;
+    transition: none; /* 移除过渡效果 */
+  }
+  
+  /* 加载动画 */
+  .loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  body.loaded #loader {
+    display: none;
+  }
+  
+  /* 卡片动态效果 */
+  .card {
+    opacity: 1; /* 默认可见 */
+    transition: none; /* 移除淡入效果 */
+  }
+  
+  /* 返回顶部按钮 */
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4ecdc4;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: none;
+  }
+  
+  .back-to-top.show {
+    display: block;
+  }
+  
+  .back-to-top:hover {
+    background-color: #3498db;
+  }
+  

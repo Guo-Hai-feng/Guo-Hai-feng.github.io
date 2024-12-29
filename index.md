@@ -1,10 +1,8 @@
 ---
-layout: home
+layout: index
+custom_css: "/asset/css/index.css"
 
 ---
 
 
 
-
-
-<ul>
