@@ -27,6 +27,9 @@ url: "https://guo-hai-feng.github.io" # the base hostname & protocol for your si
 twitter_username: noname
 github_username:  Guo-Hai-feng
 
+permalink: /posts/:title/
+
+
 # Build settings
 theme: minima
 
